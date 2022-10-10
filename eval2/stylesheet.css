@@ -1,0 +1,45 @@
+h1 {
+  font-size: 1.75em;                                /*Setting title font size*/
+  font-weight: bold;                                /*Bolding title*/
+  border-color: violet;                             /*Setting border color*/
+  text-align: center;                               /*Centering title*/
+  font-family: Garamond, "Times New Roman", serif;  /*Setting title font style*/
+  background-color: black;                          /*Setting title background color*/
+  color: orange;                                    /*Setting title text color*/
+  border-style: solid;                              /*Setting title border line style*/
+  border-radius: 20%;                               /*Rounding title border sides*/
+}                                                   /*Celebrating Halloween early*/
+
+h2 {
+  font-size: 1.5em;         /*Enlarging author name*/
+  font-weight: bold;        /*Bolding author name*/
+  text-align: center;       /*Centering author name*/
+}
+
+h2.ref{
+  font-size: 1.25em;        /*Setting reference subsection title size*/
+  font-weight: bold;        /*Bolding reference subsection title*/
+  text-align: center;       /*Centering reference subsection title*/
+}
+
+p {
+  text-indent: 2em;         /*Indenting first line of paragraphs*/
+  margin-left: 1em;         /*Giving paragraphs extra space on left*/
+  margin-right: 2em;        /*Giving paragraphs extra space on right*/
+}
+
+li {
+  margin-right: 2em;        /*Giving list items extra space on right*/
+  margin-lefts: 2em;        /*Giving list items extra space on left*/
+}
+
+p.ref {                     /*Creating a hanging-ident effect for references for stylistic reasons*/
+  max-width: 80%;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+img {
+  max-width: 150%;          /*Limiting amount of horizontal screen space an image can occupy*/
+  max-height: auto;         /*Ensuring image height remains proportionate as image width adjusts*/
+}
