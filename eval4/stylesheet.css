@@ -1,0 +1,115 @@
+*{
+  /*background-color: #E8D3A2;                       /*Setting default background color*/
+  font-family: "Times New Roman", serif;           /*Setting default font style*/
+}
+
+h1 {
+  font-size: 2em;                                   /*Setting title font size*/
+  font-weight: bold;                                /*Bolding title*/
+  text-align: center;                               /*Centering title*/
+  color: #453534;                                   /*Setting title text color*/
+  text-shadow: 1px 1px #b4efb9;                 /*Creating title shadow effect*/
+}
+
+h2 {
+  font-size: 1.5em;                                /*Enlarging author name*/
+  font-weight: bold;                                /*Bolding author name*/
+  text-align: right;                               /*Centering author name*/
+  color: #453534;                                   /*Setting color of author's name*/
+  text-shadow: 1px 1px #b4efb9;                 /*Creating title shadow effect*/
+}
+
+h3 {
+  font-size: 1.5em;                                 /*Setting size of Table of Contents & References subtitles*/
+  font-weight: bold;                                /*Bolding ToC & References subtitles*/
+  text-align: center;                               /*Centering ToC & References subtitles*/
+  color: #2F5496;                                   /*Setting color of Table of Contents & References subtitles*/
+  background-color: inherit;                        /*Setting background colors of Table of Contents & References subsections to the background colors of the sections in which they're respectively nested*/
+  text-decoration-line: underline;                  /*Underlining ToC & References subtitles*/
+}
+
+h4 {
+  font-size: 1.25em;                                /*Setting size of essay section titles*/
+  color: #538135;                                   /*Setting size of essay section titles*/
+  font-weight: bold;                                /*Bolding essay section titles*/
+  margin-bottom: -.25em;                            /*Decreasing space below essay section titles*/
+  margin-top: -.1em;                                /*Decreasing space above essay section titles*/
+  margin-left: .75em;                               /*Making essay section subheadings approximately flush with paragraphs*/
+}
+
+p {
+  text-indent: 2em;                                 /*Indenting first line of paragraphs*/
+  margin-left: 1em;                                 /*Giving paragraphs extra space on left*/
+  margin-right: 2em;                                /*Giving paragraphs extra space on right*/
+  color:  #33006F;                                  /*Setting paragraph text color*/
+  line-height: 1.35em;                              /*Increasing line height to improve readability*/
+}
+
+li {
+  margin-right: 2em;                                /*Giving list items extra space on right*/
+  background-color: inherit;                        /*Setting background color of list items to the background color of the section in which they're nested*/
+}
+
+ol {
+  background-color: inherit;                        /*Setting background color of lists to the background color of the section in which they're nested*/
+}
+
+a.toc {
+  background-color: inherit;                        /*Setting background color of linked elements of the toc class to the background color of the section in which they're nested*/
+}
+
+p.ref {                                             /*Creating a hanging-ident effect for references for stylistic reasons*/
+  max-width: 80%;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+p.photo {
+  text-indent: 0em;
+}
+
+section.header {
+	background-image: url("pinkFlowers.jpg");
+  background-size: cover;
+  background-position: center;
+  }
+
+footer {
+	background-image: url("redLeaves.jpg");
+  background-size: cover;}
+
+img {
+  max-width: 100%;                                  /*Limiting amount of horizontal screen space an image can occupy*/
+  width: 75%;                                       /*Setting how wide an image should be relative to the screen*/
+  max-height: auto;                                 /*Ensuring image height remains proportionate as image width adjusts*/
+  margin: 1.25em;                                   /*Creating a buffer around images to improve readability of text*/
+}
+
+
+p.footer {
+  padding: .5em;                                    /*Extending area around paragraphs in the footer*/
+  color: white;                                   /*Assigning text color paragraphs in the footer*/
+  text-shadow: 2px 2px #037d8b;
+}
+
+a.footer {                                          /*Creating a "Contact author" link that resembles a button*/
+  color: white;                                     /*Assigning footer linked text color*/
+  text-decoration:none;                             /*Removing default underlining of links in footer*/
+  border-style: ridge;                              /*Creating a raised border around links in footer*/
+  padding: .25em;                                   /*Extending area around linked text in footer*/
+  text-align: center;                               /*Centering linked text in its box*/
+  background-color: black;
+}
+
+a:hover {                                           /*Changing text and background colors of links being hovered over to make interactability more apparent*/
+  background-color: #D0B52F;
+  color: #2F4AD0;
+}
+
+.toc {                                              /*Creating a class to change the background color of Table of Content elements*/
+  background-color: #A2B7E8;
+}
+
+section.toc {
+    border-style: inset;                            /*Creating the effect that the Table of Contents section is engraved in the page*/
+}
