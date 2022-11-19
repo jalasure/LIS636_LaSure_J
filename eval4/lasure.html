@@ -1,0 +1,264 @@
+<html>								                                                          <!--Declaring doctype-->
+
+<head>											                                                    <!--Creating metadata header section-->
+  <link rel="stylesheet" href="stylesheet.css">								                  <!--Linking to stylesheet-->
+  <meta name="author" content="Joe LaSure"> 								                    <!--Providing author identity as a metadata element-->
+  <title>Evaluating the University of Michigan&apos;s Library Search</title>  	<!--Providing paper title as metadata element-->
+</head>
+
+<body>
+
+<section class="header">											                                  <!--Creating header section of body that will be displayed-->
+    <h1>
+      Evaluating the University of Michigan&apos;s Library Search</h1> 			    <!--Paper title-->
+
+    <h2>
+      by Joe LaSure</h2>											                                  <!--Author name, as it will be displayed-->
+
+</section>
+
+<hr>													                                                  <!--Horizontal line for style-->
+
+<section class="toc">			                                                      <!--Creating Table of Contents section-->
+  <h3 class="toc">			                                                        <!--ToC header-->
+    Table of Contents</h3>
+
+  <ol>											                                                    <!--Table of Contents: numbered, hierarchical, linked list-->
+    <li><a class="toc" href="#Overview">Introduction and Overview</a></li>
+    <li><a class="toc" href="#Review">Literature Review</a></li>
+    <ol type='a'>											                                          <!--List within a list to show hierarchy-->
+      <li><a class="toc" href="#Agree">Pro-simplification</a></li>
+      <li><a class="toc" href="#Disagree">Anti-simplification</a></li>
+      <li><a class="toc" href="#Moderate">Moderate</a></li>
+      <li><a class="toc" href="#Questions">Research Questions</a></li></ol>
+    <li><a class="toc" href="#Analysis">Analysis</a></li>
+    <li><a class="toc" href="#Conclusion">Recommendations and Conclusion</a></li>
+    <li><a class="toc" href="#References">References</a></li>
+  </ol>
+</section>
+
+
+                                                                                <!--The essay, including subtitles with images inserted-->
+
+<section>
+
+  <h4 id="Overview">Introduction and Overview</h4>                              <!--Example of bookmarked subtitle, used to create ToC-->
+
+	<p>According to the American Library Association (2012), the University of Michigan boasts one of the largest library collections in the United States, which exceeded 10,000,000 volumes over a decade ago. This is to say nothing of the 300,000+ serials the Library (n.d.d) holds or the millions of digital resources to which the institution provides access. Because the University of Michigan&apos;s Library serves nearly 80,000 students and staff members, perhaps it is unsurprising that the information organization oversees so many items (Office of Budget and Planning [OBP], n.d.). However, without a way to organize the surrogate records of all these resources, said resources are functionally worthless. Therefore, Library Search [LS] exists.</p>
+
+	<p>As described by the Library (n.d.a), this discovery system allows one to search the bibliographic records of all of the library&apos;s digital and physical resources. Immediately after a keyword search is launched, the interface&apos;s default Everything view allows one to see a handful of search results in each of five categories: Articles, Catalog, Databases, Guides & More, and Online Journals (n.d.c). Once one has selected a resource category, one may then further narrow the results through faceted browsing (n.d.b).</p>
+
+	<div class="grid">                                                            <!--First grid, created by declaring a div element with the "grid" class-->
+		<figure class="item11">                                                     <!--Example of a figure, employed here to add captions to images-->
+			<img src="exampleWide.PNG" class="left" alt="A screenshot of the intermediary, category-selection screen.">
+                                                                                <!--Above, an inserted image, complete with alt text-->
+			<figcaption class="left">A screenshot of the intermediary, category-selection screen.</figcaption>
+                                                                                <!--Caption to the above image-->
+		</figure>
+
+		<figure class="item33">                                                     <!--Second figure in both the document and the current grid-->
+			<img src="exampleBrowse.PNG" class="right" alt="A screenshot of the displayed results within a resource category, complete with faceted browsing options.">
+			<figcaption class="right">A screenshot of the displayed results within a resource category, complete with faceted browsing options.</figcaption>
+		</figure>
+
+	<p class="item22">This emphasis on simplification is so great that it extends beyond the tool&apos;s functionality and informs its visual design. As seen on the Library&apos;s (n.d.e) homepage, the search box is largely free of any links not related to searching, an uncommon occurrence in the author&apos;s experience (University of North Carolina at Greensboro, n.d.; University of Toronto Libraries, n.d.; University of Washington Libraries, n.d.). Instead, the minimalist design&mdash; &quot;What can we help you find?&quot;, written in a black, san-serif typeface on a white background&mdash; is complicated only by the inclusion of two links which limit search results to two of the aforementioned categories (University of Michigan Library [UML], n.d.e). Besides this, the search box sits on top of a background image of one of the Library&apos;s resources, which is updated regularly to remain topical, with an unobtrusive linked title of the resource located in the lower-right corner of the image.</p>
+                                                                                <!--Paragraph in same grid as the images; creates a wrapping effect-->
+	</div>
+
+	<p>Though distinct from its functionality, the system&apos;s visual design is worth mentioning here because it subtly informs the user of how paradoxically limited their power is when they begin using the tool. Because the search box does not feature any pre-search customization options, e.g., an advanced search option, one must begin by searching for all five types of resources, pending the usage of the two aforementioned links or a wholly separate navigational element (n.d.e). While this can quickly be adjusted after the initial list of results has been returned, it does not negate the fact that, at the start, it greatly limits the user&apos;s control over their own search.</p>
+
+	<figure class="leftHome">                                                     <!--A non-gridded figure (image & caption)-->
+		<img src="exampleHome.PNG" class="left" alt="A screenshot of the Library Search tool, taken from the homepage.">
+		<figcaption class="Homey">A screenshot of the Library Search tool, taken from the homepage.</figcaption>
+	</figure>
+
+	<p>Moreover, as outlined on the &quot;About Library Search&quot; page, this simplified search element is not entirely free from complexity, as Library Search is supported by three separate library departments (n.d.a). The interface is built upon a foundation of five information management systems, the data from which is processed using open-source software created by the Library. While this might have been relatively easy for the Library&apos;s staff to implement, it would be ludicrous to entirely write off Library Search as simple on the developers&apos; side since a simpler alternative would have been to leave each component independent.</p>
+
+	<p>Because the author sees this issue of complexity management as vital to any analysis of Library Search, in this report, he will evaluate the site feature with Tesler&apos;s Law [TL]. In the following literature review, the author will synthesize what various researchers and professionals have written about this and related design principles before using the maxim to evaluate Library Search. The report will close with a consideration of the limitations of Tesler&apos;s Law as an analysis tool and recommendations for how the Library Search feature might be improved.</p>
+
+  <h4 id="Review">Literature Review</h4>
+
+	<p>Before discussing the conservation of complexity, it would be reasonable to establish what complexity itself is. Per Bedny et al. (2012), complexity is an inherent, multifaceted characteristic of a task that represents how much effort must be exerted to accomplish said task. Drawing on others&apos; (Bedny & Meister, 1997; Gallwey & Drury, 1986; Payne, 1976) work, Bedny et al. (2012) identify factors that can influence a task&apos;s complexity levels, including the number of task elements, their interactions with each other, and unpredictability. Further, the authors distinguish between objective &quot;complexity&quot; and subjective &quot;difficulty&quot; (p. 240), a distinction Cosenzo (2020) would rephrase but ultimately reaffirm as the difference between perceived and operational complexity.</p>
+
+	<p>Turning to Tesler&apos;s Law, this maxim states that all computer applications have an inherent, irreducible amount of complexity (&quot;Law of conservation of complexity,&quot; 2022). Since the complexity cannot be nullified, it must be managed either by the developers or the users. For this reason, Tesler Law is also referred to as the Law of Conservation of Complexity (Yablonski, n.d.c). Larry Tesler, the maxim&apos;s namesake, formulated the law to promote an invention in the early 1980s, arguing it is good business sense for a developer to invest the extra resources to create a consumer-friendly product, thereby minimizing the amount of dissatisfaction generated through its use (Saffer, 2007).</p>
+
+	<p>Thus, the Law could be thought of as having two parts: 1) the theory about the existence of irreducible complexity and 2) the design recommendation that is derived from said theory. In reviewing the literature, the author did not encounter any challenges to the idea of inherent complexity, and on the contrary, other authors reaffirm its existence, even without reference to Tesler (Bishop, 2008; Wassyng et al., 2012). Because of the lack of contestations over the existence of a minimal level of complexity, the remainder of this literature review will focus on views related to Tesler&apos;s recommendation, viz. that complexity should largely be managed by an application&apos;s developers. While opinions related to this design principle exist on a continuum and often feature more nuance than this report&apos;s length allows, for the sake of simplicity (so to speak), the author will categorize the reviewed writings into three groups: agreeing, dissenting, and mixed.</p>
+
+  <h5 id="Agree">Pro-simplification</h5>
+
+	<p>To begin, it is noteworthy that Tesler&apos;s Law is not the only design principle to advocate for simplification where possible. In his Laws of UX project, alongside TL, Yablonski (n.d.b) discusses Ockham&apos;s razor. Originally a medieval principle for guiding rational thinking, this is the idea that all things being equal, the simplest explanation or solution should be preferred. In keeping with this idea, design professionals, such as Soegaard (2020), recommend actively excluding any features of a product that add complexity without value. Soegaard specifically does so by invoking the Pareto principle, arguing that most of the value users derive from a product originates from only a slim portion of its functionality. Thus, everything else is a surplus that can, and should, be removed.</p>
+
+	<p>Similar pro-simplification positions are advanced by Bishop (2008) who describes the process of &quot;[s]hifting&quot; (p. 62) complexity to retain needed functionality. Much like Tesler, Moore (2004) advocates proactively managing complexity during a project&apos;s design phase, as opposed to retroactively fixing issues after the product has already been created. In this way, Moore might also be said to resemble Garrett (2011), who proposes establishing one&apos;s goals and requirements for a product well before the physical production phase. Likewise, Krug (2014) advises readers to minimize complexity through means such as reducing verbosity since users typically visit websites with express purposes. The findings of Swanson et al. (2017) demonstrate the utility of minimizing complexity, revealing that users may be inclined to only visit new sections of an academic library site after the ambient complexity has been reduced. Finally, as Lidwell et al. (2015) point out, simplicity in visual design has proven quite effective for the little-known tech company Apple, which has a penchant for sleek monitors.</p>
+
+  <h5 id="Disagree">Anti-simplification</h5>
+
+	<p>On the contrary, other thinkers have suggested that reducing complexity is a misguided goal. For instance, Tognazzini (1998) argues that people like to maintain a fixed level of complexity in their lives. Therefore, if a product is made easier to use, consumers will seek to use it for increasingly complex purposes. Interestingly, Bishop (2008) also predicts the undertaking of more complex tasks as technology becomes more powerful, describing the process as &quot;extend[ing the new] functionality as a means of continual improvement&quot; (p. 63). Related to Tognazzini&apos;s (1998) Law of Commuting, Dawson (2011) outlines the performance versus preference theory that states users will not always choose solutions based on what would be most effective at fulfilling their needs as this might conflict with personal preferences. Additionally, drawing on ideas like that which Yablonski (n.d.a) identifies as the Doherty threshold, Cosenzo (2020) notes that, past a certain point, simplification decreases user satisfaction since it creates the impression that the user&apos;s needs have not been handled with sufficient care.</p>
+
+	<p>Beyond the affective push-backs against simplification, some thinkers also discuss the negative practical consequences. For example, as cited by Williams and Foster (2011, p. 181), Alling and Naismith (2007) and Ochoa et al. (2007) observe that veteran researchers may lament the decreased availability of advanced search options associated with federated search tools. Furthermore, Butkiewicz et al. (2014) found that one way to reduce webpage complexity is to prevent the loading of external elements; however, blocking such resources could deny users important content and functionality. Because of the need to balance such conflicting interests, other thinkers propose a more moderate approach to simplification.</p>
+
+  <h5 id="Moderate">Moderate</h5>
+
+	<p>Yablonski (n.d.c), whose Laws of UX site serves as the foundation for this report, notes that designers should never simplify to the point of abstraction when following Tesler&apos;s Law since this would be counterproductive. Comparably, while ostensibly arguing against simplification, Norman (2010) proposes creators not think of balancing complexity and functionality as a &quot;zero-sum game,&quot; (p. 54) suggesting both are desirable at the appropriate times and levels. Furthermore, Vahidov (2012), like Norman, held that Ockham&apos;s razor is too often misrepresented and misapplied; however, he still identified simplification in moderation as an effective design principle.</p>
+
+	<p>More pertinent to the case of Library Search, Johnson (2013) learned that though users viewed the Encore discovery platform favorably, its relative simplicity did not solve deeper issues of library illiteracy, and again, decreased levels of control dissatisfied some users. These findings were echoed by Haggerty and Scott (2019), who found that patrons will gladly use a simplified search engine, often with greater success than with the more complicated tools, yet some were still hesitant to completely abandon the more complex settings of an older discovery interface. Finally, Wang et al. (2014) found that in web environments, moderate visual stimulation is best for keeping users engaged but not overwhelmed.</p>
+
+  <h5 id="Questions">Research Questions</h5>
+
+	<p>To evaluate Library Search with TL, it is necessary to first operationalize the latter. This will be accomplished by answering the three research questions listed below. As described above, Tesler&apos;s Law may be broken down into two parts. Consequently, the first question seeks to determine whether Tesler&apos;s Law is an appropriate tool for evaluating Library Search. The second and third questions seek to determine if and to what effect Library Search adheres to the design principles inspired by the theoretical claim at the heart of Tesler&apos;s Law.</p>
+
+	<ol class="quest">                                                             <!--List of indented research questions to get reader's attention-->
+		<li>To what extent does Library Search&apos;s design demonstrate the irreducibility of complexity described in Tesler&apos;s Law?</li>
+		<li>To what extent does Library Search exhibit the shifting of complexity onto the developer, as recommended by Tesler&apos;s Law?</li>
+		<li>If Library Search aligns with the theoretical claims and practical recommendations of Tesler&apos;s Law, how does it affect the discovery interface&apos;s usability?</li></ol>
+
+  <h4 id="Analysis">Analysis</h4>
+
+	<p>Because the main inquiry of this report is whether following Tesler&apos;s Law helped the UM Library create an effective feature, the author will quickly answer Q1 and Q2 before devoting most of the Analysis to Q3.</p>
+
+	<p>Beginning with Q2, it seems that the library does follow the prescription derived from Tesler&apos;s Law, with the feature&apos;s developers taking the tool&apos;s complexity upon themselves. As asserted in the Overview, one may reasonably consider Library Search relatively complex for the following reasons. First, three separate Library departments support the system (n.d.a). Second, the team behind Library Search created enough of it themselves that they can offer it as open-source software. This is in contrast with, for example, UNC Greensboro, which uses the proprietary product WorldCat Discovery (Leininger, 2022). Because merely adopting library software is noted to be difficult at times, as discussed by Singh (2019), one might reasonably speculate that creating software is at least as complicated. Therefore, it is argued that Library Search is complex.</p>
+
+	<p>With that point established, it is no secret that Library Search was designed to maximize ease of use for patrons: &quot;Library Search is designed to separate the user experience from the particular system that provides or manages the data. This allowed us…to switch library management systems and article discovery systems…with minimal need for changes to the user experience&quot; (n.d.a). Assuming there is an irreducible amount of complexity in a system, then it becomes clear that the development team voluntarily took this complexity upon itself to maintain a positive user experience. Thus, the answer to Q2 is that the recommendation is followed to a considerable extent.</p>
+
+	<p>Stepping back to Q1, the quote in the preceding paragraph, if taken literally, suggests that the system not only adheres to the recommendation of Tesler&apos;s Law but is also subject to its theoretical claims about the irreducibility of a system&apos;s complexity. The phrase &quot;allowed us&quot; (n.d.a) implies that the separation of user experience and backend data management systems which is facilitated through Library Search would not be possible without the system, or at least an analog. The cause of this impossibility may reasonably be assumed to be the irreducibility of complexity, for if the developers were able to completely nullify the system&apos;s complexity instead of taking it upon themselves, it seems likely that they would have. Therefore, it stands to reason that Library Search does demonstrate the irreducibility of systemic complexity.</p>
+
+	<p>Since Library Search has now been argued to align with Tesler&apos;s Law&apos;s recommendation and its ontological claims about complexity, it remains to evaluate how effective the feature is owing to this alignment. This begins with reiterating that Library Search exhibits simplification in two related yet distinct ways. First, federated-search tools like LS are defined by their ability to &quot;search and retrieve results from multiple sources of information while using only a single, common interface&quot; (Joudrey & Taylor, 2018, p. 164). In and of itself, this represents simplification since it makes it generally unnecessary for users to search within individual information systems.</p>
+
+	<p>Second, as stated in the Overview, the actual interface of Library Search features only a search box, which automatically searches all resource categories, and two discrete buttons, each allowing the user to narrow their search within a single resource category (n.d.e). If one does not use either button, then most of the system&apos;s faceted-browsing options only become available as a second step after the query has already been launched. Because Library Search initially gives the user very few options besides the &quot;Everything&quot; search, itself the first example of simplification, the system is said to be doubly simplified.</p>
+
+	<p>Regarding the first instance of simplification, it seems likely that this is an effective example of simplification since many library users find success with federated search tools, per Johnson (2013) and Haggerty and Scott (2019). Moreover, as demonstrated by UNC Greensboro&apos;s (n.d.) University Libraries&apos; site, the implementation of a simplified search box need not preclude the inclusion of ready-at-hand advanced-search options alongside it. That is, even if the second instance of simplification is excessive, the first need not inherently be so. Therefore, the author judges that the existence of Library Search&apos;s simplified search box is a largely positive aspect of the UM Library site.</p>
+
+	<p>It is less immediately clear if the second instance of simplification is also positive. While Wang et al. (2014) and Krug (2014) both assert that it is best to not overwhelm a site user with excessive stimuli, one might predict that Library Search&apos;s initial withholding of advanced search options would result in the kind of dissatisfaction cited by Williams and Foster (2011). This is especially true since the university&apos;s undergraduate population&mdash;who, for the sake of brevity, will be assumed to comprise most of the site&apos;s new visitors annually&mdash;only modestly outweighs the combined graduate student and faculty population (25.5%), who are most likely to desire the advanced search options (OBP, n.d.). Moreover, though there is likely to be a greater annual influx of undergraduates than the outflux of doctorate students and faculty members, as undergraduates go through their academic careers, they too may come to desire the advanced search options from the outset of searches. Therefore, one might conclude that Library Search is overly simplified.</p>
+
+	<p>On the contrary, the author holds that even with the second layer of simplification, Library Search is not too simplified. First, the two buttons featured alongside the search field are &quot;catalog&quot; and &quot;articles&quot; (n.d.e). While the author cannot verify that these are the two resource types for which Library Search users most frequently search, it seems at least possible. Beyond this, while there is one additional step&mdash;viz. picking the category of resource&mdash;between launching a query and having access to all facets for browsing, this is only one step. As asserted by Krug (2014), the number of clicks required to achieve something is less impactful on user experience than the intuitiveness of the navigation. Therefore, requiring users to indicate a resource category before giving them the option to, for example, select a publication date range should not be seen as unreasonable, particularly when subsequently switching between categories does not necessitate the additional two clicks of the browser&apos;s back button (n.d.b).</p>
+
+	<p>Furthermore, by requiring this middle step, Library Search demonstrates a professionally approved design technique called &quot;staged disclosure&quot; (Grant, 2022; Kaplan, 2020; Yablonski, 2016). With this, a developer exposes a user to progressively higher levels of complexity, striking the middle ground between overwhelming them at the beginning of an interaction and leaving them feeling impotent or neglected at the end. Finally, it is worth noting that for any repeat LS users who simply cannot be bothered to complete the intermediary step with each use, it is possible to bookmark any of the individual categories&apos; pages, as demonstrated by the Databases page (n.d.b).</p>
+
+  <h4 id="Conclusion">Recommendations and Conclusion</h4>
+
+	<p>One way that Library Search might be improved is the responsive layout of the panels on the category-selection screen on the desktop site. On a sufficiently wide screen, all five panels appear side by side; on smaller screens, some panels form additional rows beneath the topmost one. Typically, such a feature would be beneficial since it allows the browser window to narrow considerably before the on-screen text shrinks, and the presence of a vertical scroll bar does suggest to the user that there might be an additional row of panels beneath the first. However, because the panels do not share a uniform height, one may not realize that another row of panels is present if one of the topmost panels is already seen to go below the fold, as depicted below. Because the same content can be accessed using the navigation bar above the panels, not much harm is caused by this feature. Even so, in the author&apos;s experience, it can be slightly surprising to find additional rows of panels, so setting nearly uniform panel heights could be a worthwhile change.</p>
+
+<div class="grid">                                                              <!--2nd grid: two figures & one paragraph-->
+
+	<figure class="item44">                                                       <!--4th figure in document-->
+		<img src="exampleNarrow.PNG" class="left" alt="A screenshot of the first row of panels on the category-selection screen, as depicted on narrow screens.">
+		<figcaption class="left">A screenshot of the first row of panels on the category-selection screen, as depicted on narrow screens.</figcaption>
+	</figure>
+
+	<figure class="item55">                                                       <!--5th figure in document-->
+		<img src="exampleWide.PNG" class="right" alt="A screenshot of all five category panels side by side, as depicted on sufficiently wide screens.">
+		<figcaption class="right">A screenshot of all five category panels side by side, as depicted on sufficiently wide screens.</figcaption>
+	</figure>
+
+	<p class="item66">One of this study&apos;s limitations was the tool with which the evaluation was conducted: Tesler&apos;s Law. As has already been stated, the Law is comprised of two parts. The first, being an explanatory theory, is not suited to serving as a tool of measurement, and the second, a piece of advice derived from the theory, is functionally the same as Ockham&apos;s razor. Thus, the literature review and evaluation might have been accomplished more succinctly using the razor. However, additional value was created for the author&mdash;not to mention the reader&mdash;through the reflection spurred by the ontological claims about complexity found in Tesler&apos;s Law. Consequently, as a learning experience, the aims of this study were achieved.</p>                                                            <!--2nd paragraph in a grid-->
+</div>
+
+</section>                                                                      <!--Close of essay section-->
+
+<hr>                                                                            <!--Horizontal line to aid perception -->
+
+                                                                                <!--References used, including italicized titles and active links-->
+<h3 id="References">References</h3>                                             <!--Subtitle for References section-->
+
+
+<p class="ref">Alling, E., & Naismith, R. (2007). Protocol analysis of a federated search tool: Designing for users. <cite>Internet Reference Services Quarterly, 12</cite>(1-2), 195-210. <a href ="https://doi.org/10.1300/J136v12n01_10" target="_blank">https://doi.org/10.1300/J136v12n01_10.</a></p>
+
+<p class="ref">American Library Association. (2012, October). <cite>The nation's largest libraries: A listing by volumes held. </cite> <a href ="https://www.ala.org/tools/libfactsheets/alalibraryfactsheet22" target="_blank">https://www.ala.org/tools/libfactsheets/alalibraryfactsheet22.</a></p>
+
+<p class="ref">Bedny, G. Z., Karwowski, W., & Bedny, I. (2012). Complexity evaluation of computer-based tasks. <cite>International Journal of Human-Computer Interaction, 28</cite>(4), 236-257. <a href ="https://doi.org/10.1080/10447318.2011.581895" target="_blank">https://doi.org/10.1080/10447318.2011.581895.</a></p>
+
+<p class="ref">Bedny, G. Z., & Meister, D. (1997). <cite>The Russian theory of activity: Current applications to design and learning. </cite>Psychology Press. <a href ="https://doi.org/10.4324/9781315806259" target="_blank">https://doi.org/10.4324/9781315806259.</a></p>
+
+<p class="ref">Bishop, D. (2008). The theory of conservation of complexity. <cite>Interactions, 15</cite>(4), 61-63. <a href ="https://doi.org/10.1145/1374489.1374504" target="_blank">https://doi.org/10.1145/1374489.1374504.</a></p>
+
+<p class="ref">Butkiewicz, M. , Madhyastha, H., & Sekar, V. (2014). Characterizing web page complexity and its impact. <cite>IEEE/ACM Transactions on Networking, 22</cite>(3), 943-956. <a href ="https://doi.org/10.1109/TNET.2013.2269999" target="_blank">https://doi.org/10.1109/TNET.2013.2269999.</a></p>
+
+<p class="ref">Cosenzo, V. (2020, October 5). <cite>Why life can’t be simpler. </cite>Farnam Street. <a href ="https://fs.blog/why-life-cant-be-simpler/" target="_blank">https://fs.blog/why-life-cant-be-simpler/.</a></p>
+
+<p class="ref">Dawson, A. (2011). <cite>Distinctive design: A practical guide to a useful, beautiful web. </cite>John Wiley and Sons. <a href ="https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/reader.action?docID=693761" target="_blank">https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/reader.action?docID=693761.</a></p>
+
+<p class="ref">Gallwey, T. J., & Drury, C. G. (1986). Task complexity in visual inspection. <cite>Human Factors, 28</cite>(5), 595–606. <a href ="https://doi.org/10.1177/001872088602800509" target="_blank">https://doi.org/10.1177/001872088602800509.</a></p>
+
+<p class="ref">Garrett, J. J. (2011). <cite>The elements of user experience: User-centered design for the web and beyond </cite>(2nd ed.). New Riders.</p>
+
+<p class="ref">Grant, W. (2022). <cite>101 UX principles: Actionable solutions for product design success </cite>(2nd ed.). Packt Publishing. <a href ="https://learning.oreilly.com/library/view/101-ux-principles/9781803234885/" target="_blank">https://learning.oreilly.com/library/view/101-ux-principles/9781803234885/.</a></p>
+
+<p class="ref">Haggerty, K. C., & Scott, R. E. (2019). Do, or do not, make them think?: A usability study of an academic library search box. <cite>Journal of Web Librarianship, 13</cite>(4), 296-310. <a href ="https://doi.org/10.1080/19322909.2019.1684223" target="_blank">https://doi.org/10.1080/19322909.2019.1684223.</a></p>
+
+<p class="ref">Johnson, M. (2013). Usability test results for Encore in an academic library. <cite>Information Technology and Libraries, 32</cite>(3), 59-85. <a href ="https://login.libproxy.uncg.edu/login?url=https://www.proquest.com/scholarly-journals/usability-test-results-encore-academic-library/docview/1448400187/se-2" target="_blank">https://login.libproxy.uncg.edu/login?url=https://www.proquest.com/scholarly-journals/usability-test-results-encore-academic-library/docview/1448400187/se-2.</a></p>
+
+<p class="ref">Joudrey, D. N., & Taylor, A. G. (2018). <cite>The organization of information </cite>(4th ed.). Libraries Unlimited.</p>
+
+<p class="ref">Kaplan, K. (2020, November 8). <cite>8 design guidelines for complex applications. </cite>Nielsen Norman Group. <a href ="https://www.nngroup.com/articles/complex-application-design/" target="_blank">https://www.nngroup.com/articles/complex-application-design/.</a></p>
+
+<p class="ref">Krug, S. (2014). <cite>Don’t make me think, revisited: A common sense approach to web usability </cite>(3rd ed.). New Riders.</p>
+
+<p class="ref">Law of conservation of complexity. (2022, January 15). In <cite>Wikipedia. </cite><a href ="https://en.wikipedia.org/w/index.php?title=Law_of_conservation_of_complexity&oldid=1065894148" target="_blank">https://en.wikipedia.org/w/index.php?title=Law_of_conservation_of_complexity&oldid=1065894148.</a></p>
+
+<p class="ref">Leininger, L. (2022, September 9). <cite>WorldCat Discovery: Home. </cite>LibGuides. Retrieved November 14, 2022, from <a href ="https://uncg.libguides.com/wcd" target="_blank">https://uncg.libguides.com/wcd.</a></p>
+
+<p class="ref">Lidwell, W., Holden, K., & Butler, J. (2015). <cite>The pocket universal principles of design: 150 essential tools for architects, artists, designers, developers, engineers, inventors, and makers. </cite>Rockport Publishers. <a href ="https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/reader.action?docID=5357782" target="_blank">https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/reader.action?docID=5357782.</a></p>
+
+<p class="ref">Moore, C. (2004). Parting Thoughts - Managing the transition from complexity to elegance: Design convergence. <cite>IEEE Micro, 24</cite>(1), 80-79. <a href ="https://doi.org/10.1109/MM.2004.1269011" target="_blank">https://doi.org/10.1109/MM.2004.1269011.</a></p>
+
+<p class="ref">Norman, D. A. (2010). <cite>Living with complexity. </cite>MIT Press. <a href ="https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/detail.action?docID=3339197" target="_blank">https://ebookcentral-proquest-com.libproxy.uncg.edu/lib/uncg/detail.action?docID=3339197.</a></p>
+
+<p class="ref">Ochoa, M., Jesano, R., Nemmers, J. R., Newsom, C., O'Brien, M., & Victor, P., Jr. (2007). Testing the federated searching waters. <cite>Journal of Web Librarianship, 1</cite>(3), 47-66. <a href ="https://doi.org/10.1300/J502v01n03_04" target="_blank">https://doi.org/10.1300/J502v01n03_04.</a></p>
+
+<p class="ref">Office of Budget and Planning. (n.d.). <cite>Ann Arbor campus snapshot - fall 2021. </cite>University of Michigan. <a href ="https://obp.umich.edu/wp-content/uploads/pubdata/factsfigures/2021_UMAA_Infographic.pdf" target="_blank">https://obp.umich.edu/wp-content/uploads/pubdata/factsfigures/2021_UMAA_Infographic.pdf.</a></p>
+
+<p class="ref">Payne, J. W. (1976). Task complexity and contingent processing in decision-making - Information search and protocol analysis. <cite>Organizational Behavior and Human Performance, 16</cite>(2), 366-387. <a href ="https://doi.org/10.1016/0030-5073(76)90022-2" target="_blank">https://doi.org/10.1016/0030-5073(76)90022-2.</a></p>
+
+<p class="ref">Saffer, D. (2007). <cite>Designing for interaction: Creating smart applications and clever devices. </cite>New Riders. <a href ="https://archive.org/details/designingforinte0000saff" target="_blank">https://archive.org/details/designingforinte0000saff.</a></p>
+
+<p class="ref">Singh, V. (2019). Open source integrated library systems migration: Librarians share the lessons learnt. <cite>Journal of Librarianship and Information Science, 51</cite>(2), 346-355. <a href ="https://doi-org.libproxy.uncg.edu/10.1177/0961000617709059" target="_blank">https://doi-org.libproxy.uncg.edu/10.1177/0961000617709059.</a></p>
+
+<p class="ref">Soegaard, M. (2020, July 23). <cite>Occam’s razor: The simplest solution is always the best. </cite>Interaction Design Foundation. <a href ="https://www.interaction-design.org/literature/article/occam-s-razor-the-simplest-solution-is-always-the-best" target="_blank">https://www.interaction-design.org/literature/article/occam-s-razor-the-simplest-solution-is-always-the-best.</a></p>
+
+<p class="ref">Swanson, T.A., Hayes, T., Kolan, J., Hand, K., & Miller, S. (2017). Guiding choices: Implementing a library website usability study. <cite>Reference Services Review, 45</cite>(3), 359-367. <a href ="https://doi.org/10.1108/RSR-11-2016-0080" target="_blank">https://doi.org/10.1108/RSR-11-2016-0080.</a></p>
+
+<p class="ref">Tognazzini, B. (1998, September). <cite>The complexity paradox. </cite>Ask Tog. <a href ="https://www.asktog.com/columns/011complexity.html" target="_blank">https://www.asktog.com/columns/011complexity.html.</a></p>
+
+<p class="ref">University of Michigan Library. (n.d.a). <cite>About Library Search. </cite> <a href ="https://search.lib.umich.edu/about-library-search" target="_blank">https://search.lib.umich.edu/about-library-search.</a></p>
+
+<p class="ref">University of Michigan Library. (n.d.b). <cite>Databases - Library Search. </cite> <a href ="https://search.lib.umich.edu/databases" target="_blank">https://search.lib.umich.edu/databases.</a></p>
+
+<p class="ref">University of Michigan Library. (n.d.c). <cite>Example - everything - Library Search.</cite> <a href ="https://search.lib.umich.edu/everything?query=Example" target="_blank">https://search.lib.umich.edu/everything?query=Example.</a></p>
+
+<p class="ref">University of Michigan Library. (n.d.d). <cite>Statistical highlights. </cite>Retrieved November 14, 2022, from <a href ="https://www.lib.umich.edu/about-us/about-library/assessment/statistical-highlights" target="_blank">https://www.lib.umich.edu/about-us/about-library/assessment/statistical-highlights.</a></p>
+
+<p class="ref">University of Michigan Library. (n.d.e). <cite>University of Michigan Library. </cite>Retrieved November 14, 2022, from <a href ="https://www.lib.umich.edu/" target="_blank">https://www.lib.umich.edu/.</a></p>
+
+<p class="ref">University of North Carolina at Greensboro. (n.d.). <cite>University Libraries. </cite>Retrieved November 14, 2022, from <a href ="https://library.uncg.edu/" target="_blank">https://library.uncg.edu/.</a></p>
+
+<p class="ref">University of Toronto Libraries. (n.d.). <cite>University of Toronto Libraries. </cite>Retrieved November 14, 2022, from <a href ="https://onesearch.library.utoronto.ca/" target="_blank">https://onesearch.library.utoronto.ca/.</a></p>
+
+<p class="ref">University of Washington Libraries. (n.d.). <cite>University of Washington Libraries. </cite>Retrieved November 14, 2022, from <a href ="https://www.lib.washington.edu/" target="_blank">https://www.lib.washington.edu/.</a></p>
+
+<p class="ref">Vahidov, R. (2012). <cite>Design-type research in information systems: Findings and practices. </cite>Information Science Reference. <a href ="https://doi.org/10.4018/978-1-4666-0131-4" target="_blank">https://doi.org/10.4018/978-1-4666-0131-4.</a></p>
+
+<p class="ref">Wang, Q., Yang, S., Liu, M., Cao, Z., & Ma, Q. (2014). An eye-tracking study of website complexity from cognitive load perspective. <cite>Decision Support Systems, 62, </cite>1-10. <a href ="http://dx.doi.org/10.1016/j.dss.2014.02.007" target="_blank">http://dx.doi.org/10.1016/j.dss.2014.02.007.</a></p>
+
+<p class="ref">Wassyng, A., Lawford, M., & Maibaum. (2012). Separating safety and control systems to reduce complexity. In M. Hinchey & L. Coyle (Eds.), <cite>Conquering complexity </cite>(pp. 85-102). Springer. <a href ="https://doi.org/10.1007/978-1-4471-2297-5" target="_blank">https://doi.org/10.1007/978-1-4471-2297-5.</a></p>
+
+<p class="ref">Williams, S. C., & Foster, A. K. (2011). Promise fulfilled? An EBSCO Discovery Service usability study. <cite>Journal of Web Librarianship, 5</cite>(3), 179-198. <a href ="https://doi.org/10.1080/19322909.2011.597590" target="_blank">https://doi.org/10.1080/19322909.2011.597590.</a></p>
+
+<p class="ref">Yablonski, J. (n.d.a). <cite>Doherty threshold. </cite>Laws of UX. <a href ="https://lawsofux.com/doherty-threshold/" target="_blank">https://lawsofux.com/doherty-threshold/.</a></p>
+
+<p class="ref">Yablonski, J. (n.d.b). <cite>Occam’s razor. </cite>Laws of UX. <a href ="https://lawsofux.com/occams-razor/" target="_blank">https://lawsofux.com/occams-razor/.</a></p>
+
+<p class="ref">Yablonski, J. (n.d.c). <cite>Tesler’s law. </cite>Laws of UX. <a href ="https://lawsofux.com/teslers-law/" target="_blank">https://lawsofux.com/teslers-law/.</a></p>
+
+<p class="ref">Yablonski, J. (2016, October 3). <cite>Reducing design complexity: A look at a few helpful strategies for reducing the complexity in UI design. </cite>Medium. <a href ="https://jonyablonski.medium.com/reducing-design-complexity-26fc4efbe767" target="_blank">https://jonyablonski.medium.com/reducing-design-complexity-26fc4efbe767.</a></p>
+
+<p class="photoCredit">And special thanks to <a href ="https://unsplash.com/photos/McsNra2VRQQ" target="_blank">@ajny</a> and <a href ="https://unsplash.com/photos/rrViUlP0Huo" target="_blank">@takemaru</a>, respectively, for the background images in the header and footer.</p>
+
+</body> 			                                                                  <!--Closing the document body-->
+
+<footer> 			                                                                  <!--Document footer-->
+  <p class="footer"><a class="footer" href="mailto:jalasure@uncg.edu">Contact the author</a></p> 			
+   			                                                                        <!--Providing author email address-->
+  <p class="footer">Last updated on November 18, 2022.<time datetime="2022-11-18"></time></p>
+                                                                                <!--Providing date of most recent updates-->
+</footer> 			                                                                <!--Closing the footer-->
+
+</html> 			                                                                  <!--Closing the document-->
